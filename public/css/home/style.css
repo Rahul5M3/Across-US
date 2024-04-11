@@ -19,6 +19,12 @@ body {
     border-bottom: 2px solid rgb(182, 187, 196);
 }
 
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 .navbar #logo {
     width: 170px;
     height: 70px;
@@ -28,10 +34,30 @@ body {
     justify-content: center;
     align-items: center;
     font-size: x-large;
-    border-bottom: 4px solid white;
-    border-left: 4px solid white;
+    background-color: rgb(22, 26, 48);
+    border-radius: 20px;
+    position: relative;
 }
 
+@keyframes rotation {
+    0% {--gradient-angle:0deg;}
+    100% {--gradient-angle:360deg;}
+}
+
+.navbar #logo::before,
+.navbar #logo::after {
+    content: '';
+    position: absolute;
+    inset:-.1rem;
+    border-radius: inherit;
+    z-index: -1;
+    background:conic-gradient(from var(--gradient-angle),#5BBCFF,#FFFAB7,#FFD1E3,#7EA1FF,#97E7E1);
+    animation: rotation  10s linear infinite;
+}
+
+.navbar #logo::after {
+    filter: blur(3.5rem);
+}
 
 .navbar > a {
     text-decoration: none;
@@ -40,7 +66,7 @@ body {
 
 }
 
-#logo:before {
+/* #logo:before {
     content: '';
     position: absolute;
     top:1px;
@@ -123,7 +149,7 @@ body {
         border-left-color: orange;
         border-bottom-color: orange;
     }
-}
+} */
 
 .navbar #navbarContent {
     height: 80px;
@@ -135,6 +161,11 @@ body {
     /* justify-content: center; */
     align-items: center;
     margin-left: 1.5rem;
+}
+
+.navbar #navbarContent span:hover {
+    padding-left: 6px;
+    border-left: 2px dashed orange;
 }
 
 .navbar #navbarContent form {
@@ -221,14 +252,19 @@ body {
     text-decoration: none;
 }
 
+#navbarButtons:hover {
+    border-radius: 50%;
+}
+
 #navbarButtons:hover .logoutBtn button{
     color: transparent;
     height: 80px;
     width: 80px;
-    border-radius: 50%;
     position:relative;
+    border-radius: 50%;
     bottom: 8px;
 }
+
 
 #navbarButtons:hover .logoutBtn i {
     display: block;
