@@ -186,6 +186,8 @@ body {
 
 
 .Buttons {
+    margin-top: 2rem;
+    padding-top: 2rem;
     height: 8rem;
     width: 28.5rem;
     display: flex;
