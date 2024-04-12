@@ -68,3 +68,50 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* /-------------------------------------------------------------------------------- */
+@media screen and (max-width: 426px) {
+    .home-main4 {
+        padding: 1rem;
+        padding-right: 0.1rem;
+    }
+
+    .home-main411 {
+        width: 200px;
+        font-size: 12px;
+        height: 300px;
+        padding-top: 60px;
+        padding-right: 20px;
+    }
+
+    #floatingInput {
+        width: 160px;
+    }
+
+    .home-main412 {
+        font-size: 8px;
+        align-items: center;
+    }
+    .home-main412 div {
+        padding-right: 8px;
+    }
+
+    .home-main42 {
+        font-size: 10px;
+        padding-right: 6px;
+    }
+
+    #a4 {
+        display: none;
+    }
+
+    #btn12 {
+        position: absolute;
+        left: 100px;
+        top: 2186px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

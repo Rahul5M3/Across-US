@@ -278,3 +278,45 @@ a {
   transition: 0s;
   transform: translate(0, 5%);
 }
+
+/* --------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1007px){
+    .container {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        /* background-color: antiquewhite; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-content {
+        display: none;
+    }
+
+    .login-content {
+        height: 42rem
+    }
+}
+
+@media screen and (max-width: 426px){
+    .login-content {
+        height: 42rem;
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .login-content {
+        height: 42rem;
+        width: 28rem;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .login-content {
+        height: 42rem;
+        width: 25rem;
+    }
+}
