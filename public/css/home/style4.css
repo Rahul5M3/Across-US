@@ -82,6 +82,7 @@
         height: 300px;
         padding-top: 60px;
         padding-right: 20px;
+        display: none;
     }
 
     #floatingInput {
@@ -94,6 +95,11 @@
     }
     .home-main412 div {
         padding-right: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
     }
 
     .home-main42 {
