@@ -56,7 +56,7 @@ searchBoxBtn.addEventListener('click',()=>{
     searchBox.style.display='block';
     label.style.display='block';
     label.style.color='black';
-    humBurgerMenubox.style.height='252px';
+    humBurgerMenubox.style.height='298px';
 })
 
 

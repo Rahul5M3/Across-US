@@ -307,71 +307,169 @@ body {
 
 /* /---------------------------------------------------- */
 
-@media screen and (max-width:1151px) {
+@media screen and (max-width:1166.9px) and (min-height:728.7px) {
     .navbar #navbarContent {
-        width: 690px;
-        padding: 0;
+        position: relative;
+        right: 20px;
     }
 
     .navbar #navbarButtons {
-        width: 210px;
-    }
-
-    .navbar #logo::after {
-        filter: blur(5.5rem);
-    }
-
-    #navbarButtons .logoutBtn button {
-        width: 120px;
-    }
-    
-}
-
-@media screen and (max-width:1169px) {
-    .navbar #navbarContent {
-        width: 680px;
-        padding: 0;
-        flex: 3;
-        margin-left: 2.5rem;
-        padding-left: 0.2rem;
-    }
-
-    .navbar #navbarButtons {
-        width: 190px;
-    }
-
-    .navbar #navbarContent form input {
-        width: 140px;
-    }
-
-}
-
-
-@media screen and (max-width:1081px) {
-    .navbar #navbarContent {
-        flex: 4;
-        margin-left: 20px;
-        padding-left: 10px;
-    }
-
-    .navbar #navbarButtons {
+        height: 80px;
         width: 160px;
+        /* background-color: antiquewhite; */
+        padding: 0.6rem;
+    } 
+}
+
+@media screen and (max-width:1128.9px) and (min-height:728.7px){
+    .navbar #navbarButtons {
+        width: 120px;
+    } 
+
+    .navbar #navbarContent {
+        width: 720px;
     }
 
     .navbar #logo {
         width: 120px;
     }
-
-    .navbar #navbarButtons {
-        width: 148px;
-    }
-
-    .navbar #navbarContent form input {
-        width: 130px;
-    }
-
 }
 
+
+@media screen and (max-width:1082.9px) and (min-height:728.7px){
+    .navbar #navbarButtons {
+        width: 100px;
+    } 
+}
+
+@media screen and (max-width:1018.9px) and (min-height:728.7px) {
+    .navbar #navbarContent {
+        display: none;
+        opacity: 0;
+    }
+    .navbar #navbarContent div a {
+        display: none;
+    }
+
+    .navbar #navbarButtons {
+        display: none;
+    }
+
+    .humBurgerMenu {
+        display: block;
+        height: 60px;
+        width: 60px;
+        /* background-color: #7EA1FF; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+
+    .humBurgerMenu-box {
+        display: block;
+        position: fixed;
+        height: 260px;
+        width: 100%;
+        /* background-color: black; */
+        left: 0;
+        z-index: 12;
+        top: 140px;
+        transition: opacity 1s ease;
+    }
+
+    .humBurgerMenu-box-content {
+        display: block;
+        height: 100%;
+        width: 32%;
+        background-color: black;
+        position: relative;
+        left: 22px;
+        border-radius: 30px;
+        opacity: 0.9;
+        padding-left: 1rem;
+        color: white;
+    }
+
+    .humBurgerMenu-box-content>i {
+        position: relative;
+        left: 266px;
+        top: 16px;
+        font-size: 22px;
+        transition: transform 0.5s linear;
+    }
+
+    .humBurgerMenu-box-content i {
+        margin-right: 1rem;
+    }
+    
+    .humBurgerMenu-box-content a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .humBurgerMenu-box-content i:hover {
+        transform: rotate(360deg);
+    }
+
+    #floatingInput {
+        display: none;
+        width: 160px;
+    }
+
+    #floatingInput~label {
+        display: none;
+    }
+
+    .searchBox {
+        display: none;
+        position: relative;
+        left: 170px;
+        bottom: 46px;
+        width: 100px;
+    }
+
+    .searchBox button {
+        height: 40px;
+        background-color: green;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .searchBox button i {
+        position: relative;
+        left: 6px;
+    }
+}
+
+@media screen and (max-width:1015.9px) and (min-height:728.7px) {
+    .humBurgerMenu-box-content>i {
+        position: relative;
+        left: 256px;
+        top: 16px;
+        font-size: 22px;
+        transition: transform 0.5s linear;
+    }
+}
+
+@media screen and (max-width:1009.9px) and (min-height:728.7px) {
+    .humBurgerMenu-box-content>i {
+        position: relative;
+        left: 236px;
+        top: 16px;
+        font-size: 22px;
+        transition: transform 0.5s linear;
+    }
+}
+
+@media screen and (max-width:880.9px) and (min-height:728.7px) {
+    .humBurgerMenu-box-content>i {
+        position: relative;
+        left: 226px;
+        top: 16px;
+        font-size: 22px;
+        transition: transform 0.5s linear;
+    }
+}
 
 /* /------------------------------------------------------------------ */
 
@@ -407,7 +505,7 @@ body {
     .humBurgerMenu-box {
         display: block;
         position: fixed;
-        height: 236px;
+        height: 260px;
         width: 100%;
         /* background-color: black; */
         left: 0;
