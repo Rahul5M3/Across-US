@@ -120,7 +120,7 @@
 }
 
 .home-main-content {
-    height: 500px;
+    height: 460px;
     width: 90%;
     /* background-color: aqua; */
     padding: 1rem;
@@ -129,7 +129,7 @@
     overflow-x: hidden;
     display: flex;
     align-items: center;
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
 }
 
 .inside-home-main-content {
@@ -146,6 +146,7 @@
     justify-content: center;
     align-items: center;
     perspective: 1000px;
+    border: 1px solid white;
 }
 
 .scrollButtons .scroll-button1 {
@@ -288,6 +289,13 @@
         z-index: 14;
     }
 
+    .home-main-content {
+        border-right: none;
+        height: 380px;
+        display: flex;
+        justify-content: center;
+    }
+
     .home-main-heading {
         width: 300px;
         height: 60px;
@@ -301,14 +309,17 @@
     }
 
     .inside-home-main-content {
-        width: 420px;
+        /* width: 420px; */
+        width: 300px;
         overflow-x: scroll;
         overflow-y: hidden;
-        height: 340px;
+        /* height: 340px; */
+        height: 280px;
     }
 
     .inside-home-main-content .box {
         width: 260px;
+        border: none;
     }
 
     .box .box-inner {
@@ -316,17 +327,29 @@
     } 
 
     .box-inner .front-box-content i{
-        font-size: 150px;
-        left: 60px;
+        /* font-size: 150px; */
+        font-size: 80px;
+        left: 80px;
         top: 50px;
     }
 
     .box-inner .front-box-content,.back-box-content {
-        height: 290px;
+        /* height: 290px; */
+        height: 200px;
+        border: 1px solid white;
     }
 
     .box-inner .back-box-content button{
         left: 50px;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        bottom: 0px;
+        border: 1px solid white;
+    }
+
+    .box-inner .back-box-content  {
+        overflow-y: scroll;
     }
 
     .scrollButtons {
