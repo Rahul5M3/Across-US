@@ -31,3 +31,30 @@ function scrollToSection(sectionId){
         sectionid.scrollIntoView({behavior:"smooth"});
     }
 }
+
+
+const crossCancel=document.querySelector('.humBurgerMenu-box-content i');
+crossCancel.addEventListener('click',(req,res)=>{
+    const humBurgerMenubox=document.querySelector('.humBurgerMenu-box');
+    humBurgerMenubox.style.opacity='0';
+})
+
+const humBurgerMenu=document.querySelector('.humBurgerMenu');
+humBurgerMenu.addEventListener('click',()=>{
+    const humBurgerMenubox=document.querySelector('.humBurgerMenu-box');
+    humBurgerMenubox.style.opacity='0.9';
+})
+
+const searchBoxBtn=document.querySelector('.searchBoxBtn');
+searchBoxBtn.addEventListener('click',()=>{
+    const floatingInput =document.querySelector("#floatingInput");
+    const searchBox=document.querySelector('.searchBox');
+    const label=document.querySelector('#floatingInput~label');
+    const humBurgerMenubox=document.querySelector('.humBurgerMenu-box');
+    searchBoxBtn.style.display='none';  
+    floatingInput.style.display='block';
+    searchBox.style.display='block';
+    label.style.display='block';
+    label.style.color='black';
+    humBurgerMenubox.style.height='252px';
+})

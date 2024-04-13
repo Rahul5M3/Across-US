@@ -300,6 +300,10 @@ body {
     display: none;
 }
 
+.humBurgerMenu-box-content {
+    display: none;
+}
+
 
 /* /---------------------------------------------------- */
 
@@ -401,14 +405,76 @@ body {
     }
 
     .humBurgerMenu-box {
-        /* display: block; */
-        position: absolute;
-        height: 200px;
+        display: block;
+        position: fixed;
+        height: 236px;
         width: 100%;
-        background-color: black;
+        /* background-color: black; */
         left: 0;
         z-index: 12;
-        top: 132px;
+        top: 140px;
+        transition: opacity 1s ease;
+    }
+
+    .humBurgerMenu-box-content {
+        display: block;
+        height: 100%;
+        width: 60%;
+        background-color: black;
+        position: relative;
+        left: 22px;
+        border-radius: 30px;
+        opacity: 0.9;
+        padding-left: 1rem;
+        color: white;
+    }
+
+    .humBurgerMenu-box-content>i {
+        position: relative;
+        left: 206px;
+        top: 16px;
+        font-size: 22px;
+        transition: transform 0.5s linear;
+    }
+
+    .humBurgerMenu-box-content i {
+        margin-right: 1rem;
+    }
+    
+    .humBurgerMenu-box-content a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .humBurgerMenu-box-content i:hover {
+        transform: rotate(360deg);
+    }
+
+    #floatingInput {
+        display: none;
+    }
+
+    #floatingInput~label {
+        display: none;
+    }
+
+    .searchBox {
+        display: none;
+        position: relative;
+        left: 170px;
+        bottom: 46px;
+        width: 100px;
+    }
+
+    .searchBox button {
+        height: 40px;
+        background-color: green;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    .searchBox button i {
+        position: relative;
+        left: 6px;
     }
 
 }
