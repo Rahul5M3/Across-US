@@ -33,7 +33,7 @@ main()
 .catch((error)=> console.log(`DataBase not Connected error occured! ${error}`));
 
 async function main(){
-    const mongourl = "mongodb://127.0.0.1:27017/acorssus";
+    const mongourl = "mongodb://127.0.0.1:27017/acrossus";
 //    await mongoose.connect(process.env.dbUrl);
 }
 
