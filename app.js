@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV!="production"){
-    require("dotenv").config();
-}
+// if(process.env.NODE_ENV!="production"){
+//     require("dotenv").config();
+// }
 
 const express=require('express');
 const app=express();
@@ -30,14 +30,15 @@ app.listen(8080,()=>{
 
 main()
 .then(()=> console.log('Database Connected!'))
-.catch((error)=> console.log(`DataBase not Connected error occured!  ${error}`));
+.catch((error)=> console.log(`DataBase not Connected error occured! ${error}`));
 
 async function main(){
-   await mongoose.connect(process.env.dbUrl);
+    const mongourl = "mongodb://127.0.0.1:27017/acorssus";
+//    await mongoose.connect(process.env.dbUrl);
 }
 
 const sessionOption={
-    secret:process.env.SECRET,
+    secret:"abcd",
     resave:false,
     saveUninitialized:true,
     cookie: {
