@@ -1,97 +1,66 @@
 /* home.ejs */
 
-.menuBar-box {
-    position: fixed;
-    top: 152px;
-    right: 26px;
-    height: 80px;
-    width: 80px;
-    z-index: 2;
-    background-color: #5DEBD7;
-    border-radius: 50%;
-    transition: transform 6s ease;
-}
+/* author section */
 
-.menuBar-box i {
-    position: absolute;
-    top: 20px;
-    left: 22px;
-    font-size: 40px;
-    z-index: 2;
-    color: black;
-    opacity: 0.6;
-}
-
-.menuBar-box:hover i {
-    color: white;
-    z-index: 2;
-}
-
-.menuBar-box:hover {
-    transform: rotate(360deg) scale(1.2);
-}
-
-.menuBar-box::after,
-.menuBar-box::before {
-    content: '';
-    inset: 0;
-    position: absolute;
-    background:conic-gradient(from var(--gradient-angle),#5BBCFF,#FFFAB7,#FFD1E3,#7EA1FF,#97E7E1);
-    border-radius: inherit;
-    animation: rotation-Menu 6s linear infinite;
-}
-
-.menuBar-box:hover::after {
-    filter: blur(2rem);
-}
-
-@keyframes rotation-Menu {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.menuBox {
-    position: fixed;
-    height: 70vh;
-    width: 100px;
-    /* background-color: black; */
-    z-index: 4;
-    top: 142px;
-    right: 15.5px;
-    border-radius: 20px;
-    display: none;
-} 
-
-.menuBox .insideMenuBox{
-    height: 90%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    /* background-color: #5DEBD7; */
+.authors{
     display: flex;
-    flex-direction: column-reverse;
+    height: 50vh;
+    /* background-color: brown; */
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 1.5rem;
 }
 
-.insideMenuBox a {
-    text-decoration: none;
-}
-
-.insideMenuBox-i {
-    height: 100px;
-    width: 100%;
-    /* background-color: #7EA1FF; */
+.sarthak, .rahul{
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 49%;
+    height: 100%;
+    background: linear-gradient(135deg, rgb(52, 51, 78) 0%, rgb(182, 187, 196) 100%) 0px 0px / 900px 900px;
     align-items: center;
-    font-size: 40px;
+    padding: 3rem;
+    border-radius: 1rem;
 }
 
+.sarthak i, .rahul i{
+    font-size: 5rem;
+    color: #f4f6fc;
+}
+
+.sarthak h6, .rahul h6{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #f4f6fc;
+    line-height: 1.75rem;
+}
+
+.sarthak p, .rahul p{
+    font-size: 1.1rem;
+    line-height: 0.75rem;
+    color: #f4f6fc;
+}
+
+.sarthak img, .rahul img{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.author_heading{
+    color: #f4f6fc;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+    font-weight: bold;
+}
 
 
 /* home-main */
@@ -101,16 +70,21 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-left: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 }
 
 .home-main-heading {
+    display: flex;
+    align-items: center;
     /* background-color: aliceblue; */
-    height: 80px;
+    margin-left: 1rem;
+    height: 90px;
     width: 400px;
     color: white;
-    font-size: xx-large;
+    font-size: 3rem;
     font-weight: 800;
 }
 
@@ -120,24 +94,23 @@
 }
 
 .home-main-content {
-    height: 460px;
-    width: 90%;
-    /* background-color: aqua; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 480px;
+    width: 99.5%;
     padding: 1rem;
     padding-left: 0rem;
     /* overflow-x: auto; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     align-items: center;
     /* border-right: 1px solid white; */
 }
 
-.inside-home-main-content {
-    display: flex;
-}
 
-.home-main-content .box {
-    /* background: linear-gradient(135deg, rgb(49, 48, 77) 0%, rgb(182, 187, 196) 100%) 0px 0px / 400px 300px; */
+
+/* .home-main-content .box {
+    background: linear-gradient(135deg, rgb(49, 48, 77) 0%, rgb(182, 187, 196) 100%) 0px 0px / 400px 300px; 
     background-color: transparent;
     height: 300px;
     width: 400px;
@@ -147,57 +120,40 @@
     align-items: center;
     perspective: 1000px;
     border: 1px solid white;
-}
+} */
 
-.scrollButtons .scroll-button1 {
-    position: absolute;
-    left: 47px;
-    top: 270px;
+.box{
+    background: linear-gradient(135deg, rgb(52, 51, 78) 0%, rgb(182, 187, 196) 100%) 0px 0px / 500px 500px;
+    height: 25rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
     border-radius: 20px;
-    font-size: larger;
-    height: 30px;
-    width: 90px;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
+    margin-right: 1.5rem;
+}
+
+.box h2{
     color: white;
-    border: 1px solid white;
+    font-size: 2.25rem;
 }
 
-.scrollButtons .scroll-button2 {
-    position: absolute;
-    top: 270px;
-    left: 160px;
-    height: 30px;
-    width: 90px;
-    background-color: transparent;
-    border: 1px solid white;
+.box img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.box p{
     color: white;
-    border-radius: 30px;
     font-size: larger;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.scrollButtons .scroll-button1:hover {
-    box-shadow: rgb(239, 112, 21) 0px 5px 15px;;
-}
-
-.scrollButtons .scroll-button2:hover {
-     box-shadow: rgb(239, 112, 21) 0px 5px 15px;;
-}
-
-.box .box-inner  {
+/* .box .box-inner  {
     height: 100%;
     position: relative;
     width: 100%;
-    /* background-color: aliceblue; */
     padding-top: 2rem;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -259,7 +215,7 @@
     opacity: 1;
     transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+} */
 
 
 

@@ -16,15 +16,14 @@
     <div class="container">
         <div class="login-content">
             <div class="heading">
-                <div class="logo-img"><i class="fa-regular fa-eye" style="color: #ffffff;"></i></div>
-                <div class="head">Across Us</div>
+                <div class="head"><i class="fa-solid fa-people-group" style="font-size: 2.25rem; display: flex; margin-top: 10px;"></i>&nbsp;&nbsp;&nbsp;<h2>Across Us</h2></div>
             </div>
             <div class="heading-content">
                 <h4>Create an account</h4>
                 <p>Let's get united!</p>
             </div>
             <div class="form-content">
-                <form action="/signup" method="post">
+                <form action="/home" method="Get">
                     <div class="usernameFancy">
                         <input name="username" type="text" placeholder="Enter Username">
                     </div>
@@ -34,22 +33,26 @@
                     <div class="usernameFancy">
                         <input name="password" type="password" placeholder="Enter Password">
                     </div>
-                    <button style="background-color: transparent; border: none; margin-top: 1.5rem;"><div class="button-86" style="margin-bottom: 1.2rem;">Sign Up</div></button>
+                    <div class="login-buttons">
+                        <button>Sign Up</button>
+                        <button><i class="fa-brands fa-google"></i>&nbsp;&nbsp;&nbsp;Sign Up With Google</button>
+                    </div>
+                    <div class="signup-content">
+                        <p>Already have an account ? <a href="/login">Log In</a></p>
+                    </div>
                 </form>
-            </div>
-            <div class="Buttons">
-                <a href="#"><div class="button-86"><i class="fa-brands fa-gofore" style="position: relative; left: -20px;"></i>Continue with Google</div></a>
-            </div>
-            <div class="signup-content">
-                <p>Already have an account? <a href="/login">Log In</a></p>
             </div>
         </div>
 
         <div class="img-content">
             <div id="content">
-                <div id="img"><img src="/images/pexels-cottonbro-studio-4659806.jpg" alt="#Unity Image"></div>
+                <div id="img"><img src="/images/SignUp-modified.jpeg" alt="#Unity Image"></div>
                 <div id="content-2">
                     Behold how good and beautiful it is for brethren to dwell together in unity.
+                    <div class="author">
+                        <i><i class="fa-solid fa-user" style="color: #fff;"></i></i>
+                        <p>Philip Bernstein</p>
+                    </div>
                 </div>
             </div>
         </div>

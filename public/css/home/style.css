@@ -5,46 +5,52 @@ body {
     height: 100vh;
 }
 
+hr{
+    margin-top: 0;
+    height: 1rem;
+    background: linear-gradient(60deg, rgb(255, 255, 255) 0%, rgb(102, 103, 111) 100%) 0px 0px / 400px 1px;
+}
+
 /* navbar.ejs */
 .navbar {
     display: flex;
     position: relative;
     top: 0;
     width: 100%;
-    height: 130px;
+    height: 125px;
     /* background-color: aliceblue; */
     padding-top: 0.6rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-bottom: 2px solid rgb(182, 187, 196);
 }
 
-@property --gradient-angle {
+/* @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-}
+} */
 
 .navbar #logo {
     width: 170px;
     height: 70px;
-    /* background-color: antiquewhite; */
-    margin-right: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: 1.25rem;
     background-color: rgb(22, 26, 48);
-    border-radius: 20px;
+    border: 1px solid #f4f6fc;
+    border-radius: 5px;
     position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 35px;
 }
 
-@keyframes rotation {
+/* @keyframes rotation {
     0% {--gradient-angle:0deg;}
     100% {--gradient-angle:360deg;}
-}
+} */
 
-.navbar #logo::before,
+/* .navbar #logo::before,
 .navbar #logo::after {
     content: '';
     position: absolute;
@@ -53,16 +59,16 @@ body {
     z-index: -1;
     background:conic-gradient(from var(--gradient-angle),#5BBCFF,#FFFAB7,#FFD1E3,#7EA1FF,#97E7E1);
     animation: rotation  10s linear infinite;
-}
+} */
 
-.navbar #logo::after {
+/* .navbar #logo::after {
     filter: blur(3.5rem);
-}
+} */
 
 .navbar > a {
     text-decoration: none;
-    color: white;
-    font-weight: bolder;
+    color: #f4f6fc;
+    font-weight: 500;
 
 }
 
@@ -152,88 +158,100 @@ body {
 } */
 
 .navbar #navbarContent {
-    height: 80px;
-    width: 720px;
-    /* background-color: antiquewhite; */
-    padding: 1rem;
-    padding-right: 0.5rem;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    margin-left: 1.5rem;
+    height: 5rem;
+    width: 42rem;
+    padding: 1rem 1rem 1rem 0rem;
+    margin-left: 2rem;
 }
 
-.navbar #navbarContent span:hover {
+.navbar #navbarContent div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* .navbar #navbarContent span:hover {
     padding-left: 6px;
     border-left: 2px dashed orange;
-}
-
-.navbar #navbarContent form {
-    display: inline;
-    margin-left: 8px;
-    display: none;
-}
-
-.navbar #navbarContent form input {
-    border: 1px solid orange;
-    border-radius: 10px;
-    padding: 8px;
-}
-
-.navbar #navbarContent form button {
-    border-radius: 10px;
-    padding: 8px;
-    font-weight: 500;
-}
-
-.navbar #navbarContent form button:hover {
-    background-color: green;
-    color: white;
-}
+} */
 
 .navbar #navbarContent a {
+    padding: 0.75rem;
+    border-radius: 2px;
+    background-color: transparent;
     text-decoration: none;
-    color: white;
-    margin-right: 4rem;
-    opacity: 0.8;
+    color: #f4f6fc;
+    opacity: 1;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.navbar #navbarContent a:hover {
+.navbar #navbarContent div a i {
+    font-size: 1.25rem;
+    margin-left: 10px;
     opacity: 1;
 }
 
-.navbar #navbarContent a i {
-    margin-left: 6px;
-    opacity: 0.6;
-}
-
-.navbar #navbarContent a i:hover {
-    opacity: 1;
-    transform: scale(2);
-    position: relative;
-    left: 8px;
-}
-
-.navbar #navbarButtons {
-    height: 80px;
-    width: 200px;
-    /* background-color: antiquewhite; */
-    padding: 0.6rem;
-} 
-
-.searchBtn:hover {
-    transform: scale(1.2);
-    background-color: orange;
-    border-radius: 50%;
-}
-
-#navbarButtons .logoutBtn {
+.search{
     display: flex;
-    justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 5rem;
+    width: 25rem;
+    margin-right: 1rem;
 }
 
-#navbarButtons .logoutBtn button {
+.search input{
+    padding: 1rem;
+    background-color: #f4f6fc;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 300px !important;
+    margin-right: 0.5rem;
+    margin-left: 2rem;
+}
+
+.search input::placeholder{
+    color: rgba(22, 26, 48,0.7);
+}
+
+.search button{
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f6fc;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 35px;
+    color: rgb(22, 26, 48);
+}
+.navbarButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5rem;
+    width: 25rem;
+    margin-right: 3rem;
+}
+
+.navbarButtons a{
+    font-weight: 500;
+    height: 3rem;
+    width: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f6fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(22, 26, 48);
+    border-radius: 5px;
+
+}
+
+/* #navbarButtons .logoutBtn button {
     border: 0;
     background-color: none;
     height: 50px;
@@ -302,6 +320,62 @@ body {
 
 .humBurgerMenu-box-content {
     display: none;
+}  */
+
+
+.video_section{
+    margin-left: 3rem;
+    margin-top: 4rem;
+    height: 470px;
+    width: 95%;
+    padding-left: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.video_section .video{
+    width: 47%;
+    height: 100%;
+    border-radius: 0.5rem;
+    padding: 0;
+}
+
+.video_section .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.video_section .video_section_content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, rgb(52, 51, 78) 0%, rgb(182, 187, 196) 100%) 0px 0px / 900px 600px;
+}
+
+.video_section .video_section_content p,h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.video_section .video_section_content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.video_section .video_section_content p{
+    font-size: 1.2rem;
 }
 
 

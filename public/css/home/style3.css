@@ -1,10 +1,96 @@
 /* home-main3 */
 .home-main3 {
-    height: 100vh;
-    padding: 8rem;
-    padding-left: 6rem;
+    height:80vh;
+    padding-top: 3rem;
+    padding-left: 3rem;
     /* background-color: #7BC9FF; */
     display: flex;
+    margin-bottom: 1rem;
+}
+
+.form{
+    margin-left: 1rem;
+    height: 95%;
+    width: 45%;
+    display: flex;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    color: rgb(22, 26, 48);
+}
+
+.form form button{
+    border: none;
+    border-radius: 10px;
+    background-color: #d2d5df;;
+    color: rgb(22, 26, 48);
+    font-size: 1.25rem;
+    height: 3.5rem;
+    margin-top: 3rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.form form input{
+    margin-top: 1rem;
+    height: 3rem;
+    background-color: #d2d5df;;
+    border: none;
+    padding: 1rem;
+}
+
+.form form input::placeholder{
+    color: rgb(22, 26, 48);
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+.form form textarea{
+    margin-top: 1rem;
+    background-color: #d2d5df;
+    padding: 1.5rem;
+}
+
+.form form input,textarea{
+    border-radius: 10px;
+}
+
+.form form .phone{
+    margin-top: 3rem;
+    display: flex;
+    height: 7rem;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.form form .phone .phone_number,.email{
+    width: 50%;
+}
+
+.form form .phone .phone_number input{
+    width: 100%;
+}
+
+.form form .phone .email input{
+    width: 100%;
+}
+
+.form form h4{
+    color: white;
+    font-size: 2rem;
+}
+
+.form form #name,textarea{
+    width: 100%;
 }
 
 .home-main3-free {
@@ -16,125 +102,46 @@
     animation: spaes 6s linear infinite alternate;
 }
 
-@keyframes spaes {
-    0% {
-        height: 0px;
-        background-color: #FEF1F6;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    20% {
-        height: 110px;
-        background-color: #FEE5F0;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    50% {
-        height: 210px;
-        background-color: #FFD7E9;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    75% {
-        height: 310px;
-        background-color: #FFA1CA;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-    100% {
-        height: 410px;
-        background-color: #FF66A5;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-}
-
-
-.home-main3-content {
-    flex: 1;
-    /* background-color: aliceblue; */
-    padding: 1rem;
-}
-
-.home-main3-form {
-    flex: 2;
-    background-color: antiquewhite;
-    padding: 1.5rem;
-    padding-top: 2.6rem;
-    padding-right: 4rem;
-    animation: borderAnimation 6s linear infinite;
-}
-
-@keyframes borderAnimation {
-    0% {
-        background-color: #9BE8D8;
-    }
-    25% {
-        background-color: #78C1F3;
-    }
-    50% {
-        background-color: #E2F6CA;
-    }
-    75% {
-        background-color: #F8FDCF;
-    }
-    100% {
-        background:linear-gradient(#9BE8D8,#78C1F3,#E2F6CA,#F8FDCF);
-    }
-}
-
-
-.home-main3-content {
+.contact{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     display: flex;
     flex-direction: column;
+    margin-left: 6rem;
+    height: 71vh;
+    width: 46%;
+    background:linear-gradient(135deg, rgb(52, 51, 78) 0%, rgb(182, 187, 196) 100%) 0px 0px / 900px 900px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact h2{
+    margin-top: 1rem;
     color: white;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
-.home-main3-content #heading {
-    flex: 1;
-    font-size: 50px;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact h2 i{
+    font-size: 2.25rem;
+    margin-left: 0.25rem;
 }
 
-.home-main3-content #content {
-    flex: 2;
-    text-align: center;
-    padding-top: 80px;
+.contact p{
+    color: white;
+    font-size: 1.55rem;
+    margin-bottom: 1.5rem;
 }
 
-.home-main3-content #contact {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact h6{
+    color: white;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.home-main3-content #contact div {
-    font-weight: bold;
-}
-
-#contact-inside4 {
-    display: flex;
-    justify-content: center;
-    padding-left: 1.5rem;
-}
-
-#contact #contact-inside4 i{
-    font-size: 30px;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-#contact #contact-inside4 i:hover {
-    opacity: 1;
-    transform: scale(1.2);
-}
 
 /* /-------------------------------------------------------------------------------- */
 @media screen and (max-width: 426px) {

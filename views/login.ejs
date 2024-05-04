@@ -16,17 +16,16 @@
     <div class="container">
         <div class="login-content">
             <div class="heading">
-                <div class="logo-img"><i class="fa-regular fa-eye" style="color: #ffffff;"></i></div>
-                <div class="head">Across Us</div>
+                <div class="head"><i class="fa-solid fa-people-group" style="font-size: 2.25rem; display: flex; margin-top: 10px;"></i>&nbsp;&nbsp;&nbsp;<h2>Across Us</h2></div>
             </div>
             <div class="heading-content">
                 <h4>Log In to your account</h4>
                 <p>Let's get united!</p>
             </div>
             <div class="form-content">
-                <form action="/login" method="POST">
+                <form action="/home" method="GET">
                     <div class="usernameFancy">
-                        <input name="username" type="text" placeholder="username">
+                        <input name="username" type="text" placeholder="Username">
                     </div>
                     <div class="usernameFancy">
                         <input name="email" type="email" placeholder="Email">
@@ -34,22 +33,26 @@
                     <div class="usernameFancy">
                         <input name="password" type="password" placeholder="Password">
                     </div>
-                    <button style="background-color: transparent; border: none; margin-top: 1.5rem;"><div class="button-86" style="margin-bottom: 1.2rem;">Login In</div></button>
+                    <div class="login-buttons">
+                        <button>Log In</button>
+                        <button><i class="fa-brands fa-google"></i>&nbsp;&nbsp;&nbsp;Log In With Google</button>
+                    </div>
+                    <div class="signup-content">
+                        <p>Don't have an account ? <a href="/signup">Sign Up</a></p>
+                    </div>
                 </form>
-            </div>
-            <div class="Buttons">
-                <a href="#"><div class="button-86"><i class="fa-brands fa-gofore" style="position: relative; left: -20px;"></i>Continue with Google</div></a>
-            </div>
-            <div class="signup-content">
-                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
             </div>
         </div>
 
         <div class="img-content">
             <div id="content">
-                <div id="img"><img src="/Across-US/public/images/SignUp.jpeg" alt="Login"></div>
+                <div id="img"><img src="/images/LogIn.png" alt="#Unity Image"></div>
                 <div id="content-2">
                     There is beauty and power in unity. We must be united in heart and mind. One world, one people.
+                    <div class="author">
+                        <i><i class="fa-solid fa-user" style="color: #fff;"></i></i>
+                        <p>Lailah Gifty Akita</p>
+                    </div>
                 </div>
             </div>
         </div>
